@@ -1,0 +1,7 @@
+Azure Service Bus
+Azure CosmosDB
+Azure CosmosDB for MongoDB
+Azure Cache for Redis
+Azure Application insights
+Azure Monitor
+Azure Log Analytics

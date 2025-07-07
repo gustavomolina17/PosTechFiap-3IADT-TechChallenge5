@@ -1,0 +1,7 @@
+AWS WAF
+Amazon Cloud Front
+Amazon S3
+Amazon Api Gateway
+AWS Lambda
+Amazon SES
+Amazon DynamoDB

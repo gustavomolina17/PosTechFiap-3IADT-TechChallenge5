@@ -1,0 +1,1 @@
+["Client devices with players","Applications/Services","Azure - Functions (Collect device telemetry)","Azure - Event Hubs","Azure - Blob Storage","Azure - Event Grid","Azure - Functions (Transform/Write)","Azure - Data Explorer","Azure - Metrics Advisor","Grafana"]

@@ -1,0 +1,12 @@
+Amazon CloudFront
+Amazon Api Gateway
+AWS Secrets Manager
+AWS Systems Manager
+AWS Lambda
+Amazon EC2
+CloudEndure Migration
+AWS Secrets Manager
+Amazon DynamoDB
+Amazon Cognito
+AWS MGN
+Amazon QuickSight

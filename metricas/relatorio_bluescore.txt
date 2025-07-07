@@ -1,0 +1,115 @@
+=== RELATÓRIO DETALHADO DA AVALIAÇÃO BLUESCORE ===
+
+Data da avaliação: 2025-07-07 09:40:03
+Número total de arquivos avaliados: 10
+
+=== ESTATÍSTICAS GERAIS ===
+BLEU-1 médio: 0.4109 (±0.1396)
+BLEU-2 médio: 0.3232 (±0.1223)
+BLEU-3 médio: 0.2262 (±0.0937)
+BLEU-4 médio: 0.1461 (±0.0972)
+BLEU Average médio: 0.2766 (±0.1043)
+
+=== RESULTADOS AWS ===
+Número de arquivos AWS: 5
+BLEU Average médio AWS: 0.2764 (±0.1280)
+Melhor resultado AWS: 0.3966
+Pior resultado AWS: 0.1107
+
+=== RESULTADOS AZURE ===
+Número de arquivos Azure: 5
+BLEU Average médio Azure: 0.2768 (±0.0900)
+Melhor resultado Azure: 0.3756
+Pior resultado Azure: 0.1953
+
+=== RESULTADOS DETALHADOS POR ARQUIVO ===
+
+Arquivo: componentes_aws_1.txt
+  Componentes esperados: 7
+  Componentes retornados: 9
+  BLEU-1: 0.2308
+  BLEU-2: 0.1102
+  BLEU-3: 0.0709
+  BLEU-4: 0.0309
+  BLEU Average: 0.1107
+
+Arquivo: componentes_aws_2.txt
+  Componentes esperados: 11
+  Componentes retornados: 12
+  BLEU-1: 0.6286
+  BLEU-2: 0.4710
+  BLEU-3: 0.2412
+  BLEU-4: 0.1432
+  BLEU Average: 0.3710
+
+Arquivo: componentes_aws_3.txt
+  Componentes esperados: 12
+  Componentes retornados: 17
+  BLEU-1: 0.4333
+  BLEU-2: 0.3927
+  BLEU-3: 0.3021
+  BLEU-4: 0.2078
+  BLEU Average: 0.3340
+
+Arquivo: componentes_aws_4.txt
+  Componentes esperados: 5
+  Componentes retornados: 8
+  BLEU-1: 0.4667
+  BLEU-2: 0.4207
+  BLEU-3: 0.3735
+  BLEU-4: 0.3256
+  BLEU Average: 0.3966
+
+Arquivo: componentes_aws_5.txt
+  Componentes esperados: 8
+  Componentes retornados: 14
+  BLEU-1: 0.2857
+  BLEU-2: 0.2147
+  BLEU-3: 0.1340
+  BLEU-4: 0.0441
+  BLEU Average: 0.1696
+
+Arquivo: componentes_azure_1.txt
+  Componentes esperados: 4
+  Componentes retornados: 10
+  BLEU-1: 0.3333
+  BLEU-2: 0.2582
+  BLEU-3: 0.1836
+  BLEU-4: 0.0650
+  BLEU Average: 0.2100
+
+Arquivo: componentes_azure_2.txt
+  Componentes esperados: 7
+  Componentes retornados: 15
+  BLEU-1: 0.3167
+  BLEU-2: 0.2641
+  BLEU-3: 0.2067
+  BLEU-4: 0.1311
+  BLEU Average: 0.2297
+
+Arquivo: componentes_azure_3.txt
+  Componentes esperados: 7
+  Componentes retornados: 17
+  BLEU-1: 0.3000
+  BLEU-2: 0.2347
+  BLEU-3: 0.1539
+  BLEU-4: 0.0925
+  BLEU Average: 0.1953
+
+Arquivo: componentes_azure_4.txt
+  Componentes esperados: 14
+  Componentes retornados: 14
+  BLEU-1: 0.6136
+  BLEU-2: 0.4627
+  BLEU-3: 0.2767
+  BLEU-4: 0.1493
+  BLEU Average: 0.3756
+
+Arquivo: componentes_azure_5.txt
+  Componentes esperados: 9
+  Componentes retornados: 14
+  BLEU-1: 0.5000
+  BLEU-2: 0.4027
+  BLEU-3: 0.3196
+  BLEU-4: 0.2711
+  BLEU Average: 0.3734

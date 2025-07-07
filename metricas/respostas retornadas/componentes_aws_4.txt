@@ -1,0 +1,1 @@
+["AWS Glue Workflow","AWS Glue Job","Amazon SQS Queue","Amazon S3 Bucket","Amazon RDS Cluster","AWS Database Migration Service","Amazon EventBridge / CloudWatch Events","API de Compras – Dados públicos (REST API)"]

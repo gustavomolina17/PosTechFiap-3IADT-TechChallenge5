@@ -1,0 +1,1 @@
+["Azure DNS","Internet","Azure Active Directory","Azure Front Door","Azure CDN","Azure Storage Blob","App Service Plan","Azure Web App","Azure Queue Storage","Azure Function App","Azure Cache for Redis","Azure SQL Database","Azure Cosmos DB","Azure Search"]

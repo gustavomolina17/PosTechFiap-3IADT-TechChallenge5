@@ -1,0 +1,1 @@
+["Azure Active Directory (Azure AD)","Azure API Management (Gateway)","Azure Storage","Azure Content Delivery Network (CDN)","Azure Functions","Azure Key Vault","Azure Bot Service","Azure Text-to-Speech","Azure Cosmos DB","Azure Cognitive Search","Azure Monitor – Log Analytics","Azure Translator","Azure Cognitive Services","Azure Synapse Analytics"]

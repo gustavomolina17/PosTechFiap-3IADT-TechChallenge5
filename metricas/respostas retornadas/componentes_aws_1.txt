@@ -1,0 +1,1 @@
+["AWS - WAF","AWS - CloudFront","AWS - S3 (Site Web)","AWS - API Gateway","AWS - Lambda (Gerador de Permissões)","AWS - Lambda (Validador de Permissões)","AWS - SES","AWS - S3 (Armazenamento de Permissões)","AWS - DynamoDB"]

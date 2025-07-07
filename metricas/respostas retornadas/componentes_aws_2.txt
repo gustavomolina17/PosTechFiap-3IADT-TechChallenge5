@@ -1,0 +1,1 @@
+["On-Premises – Clinical Documents","AWS – Direct Connect","AWS – S3","AWS – Lambda","AWS – Amazon MQ","AWS – Amazon EC2","AWS – Amazon EKS","AWS – Amazon Textract","AWS – Amazon OpenSearch Service","AWS – Amazon RDS","AWS – Amazon SageMaker","AWS – Amazon Bedrock"]

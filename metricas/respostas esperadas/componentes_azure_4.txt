@@ -1,0 +1,14 @@
+Azure AD
+Azure Api Gateway
+Azure Text to Speech
+Azure Bot
+Azure Storage
+Azure CDN
+Azure Function
+Azure Vault
+Azure Synapse
+Azure Cognitive
+Azure Translator
+Azure CosmosDB
+Azure Search
+Azure Log Analytics

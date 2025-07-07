@@ -1,0 +1,9 @@
+Azure DNS
+Azure Active Directory
+Azure Front Door
+Azure CDN
+Azure Blob
+Azure Function
+Azure Redis
+Azure CosmosDB
+Azure Search

@@ -1,0 +1,7 @@
+Azure CDN
+Azure application Gateway
+Virtual Network
+Redis Cache
+SQL Database
+Azure Active Directory
+Azure Application Insights

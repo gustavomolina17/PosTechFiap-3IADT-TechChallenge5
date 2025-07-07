@@ -1,0 +1,11 @@
+Direct Connect
+Amazon S3
+Amazon Textract
+Amazon OpenSearch Service
+AWS Lambda
+Amazon EC2
+Amazon EKS
+Amazon MQ
+Amazon SageMaker
+Amazon Bedrock
+Amazon RDS

@@ -1,0 +1,8 @@
+Amazon Route 53
+Amazon CloudFront
+Amazon S3
+Amazon RDS
+Amazon EC2
+Amazon SQS
+AWS Lambda
+Amazon MAnaged Blockchain

@@ -1,0 +1,1 @@
+["AWS - Amazon Route 53","AWS - Amazon CloudFront","AWS - S3","AWS - VPC","AWS - Private Subnet","AWS - Application Load Balancer","AWS - Amazon EC2","AWS - Amazon RDS MySQL (Primary)","AWS - Amazon RDS Multi-AZ Standby","AWS - Auto Scaling Group (ASG)","AWS - Amazon QLDB","AWS - Amazon SQS","AWS - AWS Lambda","AWS - Amazon Managed Blockchain"]

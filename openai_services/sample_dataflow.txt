@@ -1,0 +1,48 @@
+Seguem as principais cadeias de fluxo de dados do seu ambiente Azure e, para cada uma, as ameaças STRIDE, justificativas técnicas e recomendações de mitigação.
+
+On‐Prem ↔ ExpressRoute / VPN Gateway
+
+Spoofing (S): um atacante pode tentar “se passar” pelo peer IPsec.
+• Mitigação: usar IKEv2 com certificados (EAP-TLS) ou PSK forte com AD authentication; habilitar BGP MD5 se usar BGP.
+Tampering (T): injeção ou modificação de pacotes em trânsito.
+• Mitigação: forçar ESP com AES‐GCM (integridade e confidencialidade); rekey automático.
+Information disclosure (I): escuta em links VPN mal criptografados.
+• Mitigação: criptografia IPsec ponta-a-ponta.
+Denial of Service (D): flood de sessão IPsec / saturação de túneis.
+• Mitigação: ativar Azure DDoS Protection Standard; ajustar throttling do VPN Gateway.
+Repudiation (R): falta de logs de quem estabeleceu túnel.
+• Mitigação: habilitar diagnóstico do VPN Gateway (Azure Monitor); armazenar logs em Log Analytics.
+Elevation of Privilege (E): tráfego não autorizado via caminho VPN.
+• Mitigação: aplicar NSG restritivo no subnet do Gateway; permitir só IPs/portas conhecidos.
+ExpressRoute → Hub VNet (circuito privado)
+
+
+Spoofing: tráfego direto pulando o Azure Firewall se UDR mal escrita.
+• Mitigação: usar Forced Tunneling ou UDR que aponte 0.0.0.0/0 para o Firewall IP.
+Tampering: alteração das rules do Azure Firewall.
+• Mitigação: controlar acesso via Azure RBAC; revisar Activity Log; usar recurso “Firewall Policy”.
+Information disclosure: logs de firewall contendo IPs ou consultas DNS sensíveis.
+• Mitigação: enviar logs a Log Analytics com retenção criptografada; restringir acesso ao workspace.
+Denial of Service: ataques volumétricos ao FW.
+• Mitigação: Azure DDoS Protection Standard aplicado ao VNet; escalabilidade automática do Firewall.
+Elevation: uso indevido de rule collection de alta prioridade.
+• Mitigação: RBAC mínimo (separe quem gerencia Networking de quem cria regras).
+Hub VNet ↔ Spoke VNet (Virtual Network Peering)
+
+Information disclosure: tráfego leste‐oeste flui sem inspeção se NSG em Spoke não existir.
+• Mitigação: aplicar NSG e Azure Firewall Policy no spoke; usar Service Tags (e.g. VirtualNetwork) com cuidado.
+Tampering: rota rota errada (UDR) pode redirecionar tráfego a malicioso.
+• Mitigação: auditoria de route tables; Azure Policy para vetar UDR fora do padrão.
+Elevation: um spoke pode acessar subnets de outro spoke.
+• Mitigação: usar Network Virtual Appliances (NVA) ou Firewall em Hub como “hub‐and‐spoke” forçado.
+Spoke Subnets (SIL / HA) → VMs
+
+
+Resumo:
+
+Use criptografia forte (IPsec/TLS) em todos os links.
+Restrinja perímetros leste-oeste com NSG/UDR e Azure Firewall Policy.
+Centralize logs (Azure Monitor/Log Analytics) e proteja-os via RBAC.
+Implemente princípios de least‐privilege em RBAC, Managed Identities e PIM.
+Aplique Azure DDoS Protection Standard e proteções de plataforma (Anti-Spoofing, Switch port security).
+Essa abordagem garante que cada fluxo seja analisado em relação a S, T, R, I, D e E, com controles preventivos, detectivos e corretivos.

@@ -1,0 +1,36 @@
+A seguir está uma análise STRIDE “item–a–item” para cada componente listado. Para cada um, você encontrará:
+
+- Principais ameaças STRIDE
+- Justificativa técnica
+- Recomendações de mitigação
+
+1. Azure Virtual Networks (Hub VNet, SIL Spoke VNet, VA vSRX VNet, VB vSRX VNet)
+Ameaças:
+S (Spoofing) – VM maliciosa assume IP de outro host.
+T (Tampering) – Alteração não autorizada de tabelas de rota ou NSG associados à VNet.
+I (Info Disclosure) – Captura de tráfego interno (p. ex. mirroring de tráfego).
+D (DoS) – Flooding de sub-rede ou exaustão de recursos de VNet (por ex. muitas conexões).
+E (Elevation) – Movimentação lateral entre sub-redes por falhas de segmentação.
+Justificativa: VNets isolam rede L3, mas dependem de NSG, UDR e Azure Fabric; qualquer permissão excessiva permite abusos.
+Mitigação:
+• Definir NSGs restritivos em cada subnet.
+• Aplicar Azure Policy para bloquear alterações de rota/peering sem aprovação.
+• Habilitar Flow Logs no Network Watcher para monitorar tráfego suspeito.
+• Segmentar workloads (SIL, HA, Trust, Untrust) em subnets distintas e “zero-trust” entre elas.
+
+2. Azure Virtual Network Peering
+Ameaças:
+S – Criação de peering não autorizado (pode dar acesso a outra VNet).
+T – Modificação de configurações de peering (túnel cifrado desativado).
+I – Exfiltração de dados através de redes peer.
+E – Pivot lateral para redes que deveriam estar isoladas.
+Justificativa: O peering flui em alta velocidade e em nível de backbone Azure; um peering comprometido é backdoor.
+Mitigação:
+• Restringir criação/alteração de peering via RBAC e Azure Policy.
+• Auditorar logs de atividade (Activity Logs) e alertar em alterações de peering.
+• Se possível, usar “Private Link” ou VPN Gateway para conexões com terceiros em vez de peering puro.
+
+Observações finais:
+• Centralize logs de todas as camadas (Network Watcher, Azure Firewall, NSG, AD, Activity Logs) em um SIEM.
+• Aplique “defense in depth” (segmentação de rede + controle de acesso + monitoramento + resposta).
+• Gerencie configuração de infraestrutura como código, com validações automáticas de segurança (Azure Policy, Security Center).

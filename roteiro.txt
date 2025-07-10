@@ -1,0 +1,21 @@
+Roteiro de Apresentação do Vídeo
+
+-> Contexto geral, explicar o case.
+-> Apresentar a primeira parte do streamlit - realizar upload da imagem.
+    - Análise Item a Item (Comentar)
+    - Análise do Fluxo da Aplicacao (Comentar)
+(Enquanto executa a analise)
+    - Justificar o uso de LLMs (GPT) para fazer a análise de imagem, vide notebook de experimentacao com OpenAI
+    e destacar a metodologia
+- Em seguida, o código irá buscar no RAG informações sobre o modelo de ameaças 
+(Enquanto executa a análise)
+- Explicar Azure Search.
+
+----------------------------------------------------------------------------------
+
+- Explicar como funciona a combinação entre os resultados do Azure Search + agente de análise de arquitetura baseado no RAG
+- Apresentar prompts e técnicas de prompt engineering empregadas
+- Após os resultados, comentar brevemente sobre o botão gerar pdf.
+- Métricas de avaliação e metodologia (Mostrar notebooks).
+- Conclusão final (Mostrar relatório).
+- Como melhorar o modelo?

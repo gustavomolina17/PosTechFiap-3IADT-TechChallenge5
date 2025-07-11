@@ -10,7 +10,7 @@ Nesse repositório encontram-se:
 - [x] A resolução do 5º Tech Challenge no jupyter notebook 🐍.
 - [x] Relatório.
 - [x] Pdf com o enunciado do projeto.
-- [X] Link do Vídeo Explicativo do Projeto em Funcionamento.
+
 
 
 # Autor
